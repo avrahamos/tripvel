@@ -17,6 +17,8 @@ app.use(express.json());
 app.use("/api/settings", settinsRouter);
 app.use("/api/expese", exprseRouter);
 
+//error haneling
+app.use(async(req:Request,res:Response)=>{})
 
 app.get("/ping", (req: Request, res: Response) => {
   res.status(200).send("pong");
