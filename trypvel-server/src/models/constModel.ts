@@ -8,4 +8,4 @@ export const constSchema = new Schema(
   { timestamps: true }
 );
 
-export const ConstModel = model("Const", constSchema);
+export const ConstsModel = model("Const", constSchema);
