@@ -3,6 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 import settinsRouter from './routers/settingsRoute'
 import exprseRouter from './routers/expeseRouter'
+import connectDB from "./config/dbConfig";
 
 const app = express();
 
@@ -13,6 +14,8 @@ app.use(express.json());
 app.use(cors());
 
 app.use(express.json());
+
+connectDB()
 
 app.use("/api/settings", settinsRouter);
 app.use("/api/expese", exprseRouter);
