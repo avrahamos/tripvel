@@ -21,7 +21,7 @@ export const getExpenseData = async (
   }
 };
 
-export const getDashboard = async (
+export const getAgrgregatedDashboard = async (
   req: Request,
   res: Response,
   next: NextFunction
